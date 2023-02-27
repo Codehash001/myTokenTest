@@ -4,8 +4,8 @@ const config = {
   title: 'Dapp',
   description: 'test minting Dapp',
   contractAddress: '0xb22D38fDd6296FEBe05B1e0233396F5F60008167',
-  mintPriceWL: 100000000000000,
-  mintPrice: 1200000000000000
+  mintPriceWL: 0.0001,
+  mintPrice: 0.0012
 }
 
 const onboardOptions = {
