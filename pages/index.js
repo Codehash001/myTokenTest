@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>SKLL</title>
-        <meta name="Description" content="Skulls Klubs LimitLess!" />
+        <title>Demo DAPP</title>
+        <meta name="Description" content="test" />
         <link rel="icon" href="/Logoicon.png" />
       </Head>
       <Base/>

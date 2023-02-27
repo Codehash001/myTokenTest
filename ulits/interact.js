@@ -50,7 +50,7 @@ export const goPublicMint = async (mintAmount) => {
     to: config.contractAddress,
     from: window.ethereum.selectedAddress,
     value: parseInt(
-      web3.utils(String(cost*mintAmount), 'Wei')
+      web3.utils.toWei(String(cost*mintAmount), 'ether') 
     ).toString(16), // hex
     gas: String(25000 * mintAmount),
     data: nftContract.methods
@@ -116,7 +116,7 @@ export const goListMint = async (mintAmount) => {
     to: config.contractAddress,
     from: window.ethereum.selectedAddress,
     value: parseInt(
-      web3.utils(String(config.mintPriceWL*mintAmount), 'Wei')
+      web3.utils.toWei(String(config.mintPriceWL*mintAmount), 'ether')
     ).toString(16), // hex
     gas: String(25000 * mintAmount),
     data: nftContract.methods
@@ -182,7 +182,7 @@ export const goMintFromWhiteList = async (mintAmount) => {
     to: config.contractAddress,
     from: window.ethereum.selectedAddress,
     value: parseInt(
-      web3.utils(String(config.mintPriceWL*mintAmount), 'Wei')
+      web3.utils.toWei(String(config.mintPriceWL*mintAmount), 'ether')
     ).toString(16), // hex
     gas: String(25000 * mintAmount),
     data: nftContract.methods
